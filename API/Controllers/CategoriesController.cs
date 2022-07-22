@@ -23,7 +23,6 @@ namespace API.Controllers
         public async Task<ActionResult<List<Category>>> GetCategories()
         {
             var categories = await _repo.GetCategoriesAsync();
-
             return Ok(categories);
         }
 
