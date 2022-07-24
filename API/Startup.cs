@@ -20,6 +20,9 @@ namespace API
         {
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>(); //?
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+                                //reason why we use typeof here is because we dont know what type the generic
+                                //repository is going to be until the compile time.
             services.AddDbContext<StoreContext>(x => 
             x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
             services.AddControllers();

@@ -14,22 +14,23 @@ namespace API.Controllers
     [Route("[controller]")]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryRepository _repo;
-        public CategoriesController(ICategoryRepository repo){
-            _repo = repo;
+        private readonly IGenericRepository<Category> _categoriesRepo;
+        
+        public CategoriesController(IGenericRepository<Category> categoriesRepo){
+            _categoriesRepo = categoriesRepo;          
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Category>>> GetCategories()
         {
-            var categories = await _repo.GetCategoriesAsync();
+            var categories = await _categoriesRepo.ListAllAsync();
             return Ok(categories);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
-            return await _repo.GetCategoryByIdAsync(id);
+            return await _categoriesRepo.GetByIdAsync(id);
         }
     }
 }
