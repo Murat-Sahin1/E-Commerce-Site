@@ -13,7 +13,7 @@ namespace API
                 var loggerFactory = services.GetRequiredService<ILoggerFactory>();
                 try{
                     var context = services.GetRequiredService<StoreContext>();
-                    await context.Database.MigrateAsync();
+                    await context.Database.MigrateAsync(); //create the database if we dont have one, with the migrations
                     await StoreContextSeed.SeedAsync(context, loggerFactory);
                 }
                 catch (Exception ex){

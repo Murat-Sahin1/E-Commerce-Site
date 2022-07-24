@@ -11,5 +11,10 @@ namespace Core.Interfaces
         Task<Product> GetProductByIdAsync(int id);
 
         Task<IReadOnlyList<Product>> GetProductsAsync();
+
+        //These types could have their own repos maybe?
+        Task<IReadOnlyList<ProductBrand>> GetProductBrandsAsync();
+
+        Task<IReadOnlyList<ProductType>> GetProductTypesAsync();
     }
 }
