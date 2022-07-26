@@ -35,10 +35,13 @@ namespace API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id){
+        [HttpGet("{id}")] //When we hit the endpoint
+        public async Task<ActionResult<Product>> GetProduct(int id){ //we pass the id
+
+            //First thing to do is creating a new instance of specification with the id constructor
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
 
+            //Next step is getting the entity from productsRepo with the given specification
             return await _productsRepo.GetEntityWithSpec(spec);
         }
 
