@@ -17,8 +17,9 @@ namespace API.Helpers
                     //ForMember -> First parameter is the destination, to be set to something.
                     //Second parameter is for the expression for options
                     .ForMember(d => d.ProductBrand, o => o.MapFrom(s => s.ProductBrand.Name))
-                    .ForMember(d => d.ProductType, o => o.MapFrom(s => s.ProductType.Name));
-                                                        //MapFrom is where do we want to get the property from that we want to insert into our product brand field                                  
+                    .ForMember(d => d.ProductType, o => o.MapFrom(s => s.ProductType.Name))
+                                                        //MapFrom is where do we want to get the property from that we want to insert into our product brand field      
+                    .ForMember(d => d.PictureUrl, o => o.MapFrom<ProductUrlResolver>());
         }
     }
 }
