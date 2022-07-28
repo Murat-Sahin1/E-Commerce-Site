@@ -1149,19 +1149,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Voul\\.nuget\\packages\\": {}
+    "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Voul\\E-Commerce Site\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\Voul\\E-Commerce Site\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Voul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Voul\\E-Commerce Site\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Voul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\YUSUFSENYURT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1175,8 +1175,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj"
+            "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj"
             }
           }
         }

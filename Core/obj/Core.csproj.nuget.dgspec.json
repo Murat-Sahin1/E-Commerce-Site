@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj": {}
+    "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj": {
+    "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Voul\\E-Commerce Site\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Voul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Voul\\E-Commerce Site\\Core\\obj\\",
+        "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Voul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YUSUFSENYURT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
