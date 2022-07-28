@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yWC5ckpLTql0CinSvITiq+ZkfVrfJ8qaXZMWutqGem0=",
+  "Hash": "YGMEQD9iJusJSu/iW1LjRbla/WPIWd1rScf/b/ug+qs=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Voul\\E-Commerce Site\\API\\wwwroot\\images\\products\\sb-ts1.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Voul\\E-Commerce Site\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/products/sb-ts1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
+    }
+  ]
 }
