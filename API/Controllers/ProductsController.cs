@@ -88,12 +88,10 @@ namespace API.Controllers
         public async void AddProductPost(ProductToReturnDto newProduct){ 
 
             ProductType newProductType = new ProductType{
-                Id = _storeContext.ProductTypes.Count() + 1,
                 Name = newProduct.ProductType
             };
 
             ProductBrand newProductBrand = new ProductBrand{
-                Id = _storeContext.ProductBrands.Count() + 1,
                 Name = newProduct.ProductType
             };
 
@@ -112,28 +110,18 @@ namespace API.Controllers
             await _storeContext.SaveChangesAsync();
         }
         [HttpPut("update/{id}")]
-        public async Task<ActionResult<Product>> UpdateProductPut(int id, 
+        public void UpdateProductPut(int id, 
         ProductToReturnDto updatedProduct){
-            if (updatedProduct == null){
-                return new ObjectResult(new ApiResponse(400));
-            }
 
-            var productToUpdate =  await _storeContext.Products.AsTracking().SingleOrDefaultAsync(p => p.Id == updatedProduct.Id);
-
-
-            if(productToUpdate == null){
-                return new ObjectResult(new ApiResponse(404));
-            }
+            var productToUpdate = _storeContext.Products.FirstOrDefault(p => p.Id == updatedProduct.Id);
             
             //Mapping from dto to entity
             ProductType updatedProductType = new ProductType{
-                Id = _storeContext.ProductTypes.Count() + 1,
                 Name = updatedProduct.ProductType
             };
 
             ProductBrand updatedProductBrand = new ProductBrand{
-                Id = _storeContext.ProductBrands.Count() + 1,
-                Name = updatedProduct.ProductType
+                Name = updatedProduct.ProductBrand
             };
 
             //Mapping from dto to entity
@@ -159,9 +147,7 @@ namespace API.Controllers
             productToUpdate.ProductBrandId = finalProduct.ProductBrandId;
 
             _storeContext.Products.Update(productToUpdate);
-            await _storeContext.SaveChangesAsync();
-
-            return await _storeContext.Products.FindAsync(updatedProduct.Id);
+            _storeContext.SaveChanges();
         }
     }
 }
