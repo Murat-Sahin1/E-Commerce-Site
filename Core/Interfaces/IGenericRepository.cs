@@ -16,5 +16,11 @@ namespace Core.Interfaces
         Task<T> GetEntityWithSpec(ISpecification<T> spec);
 
         Task<IReadOnlyList<T>> ListAsync (ISpecification<T> spec);
+
+        void Delete(T entity);
+
+        void Change(T dbEntity, T entity);
+
+        void Add(T entity);
     }
 }

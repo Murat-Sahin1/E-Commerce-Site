@@ -52,5 +52,20 @@ namespace Infrastructure.Data
             //and we also passing in the specification to our specificationEvaluator
             return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
         }
+
+        public void Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Change(T dbEntity, T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(T entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -59,3 +59,4 @@ C:\Users\Voul\E-Commerce Site\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore
 C:\Users\Voul\E-Commerce Site\API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Voul\E-Commerce Site\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Voul\E-Commerce Site\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
+C:\Users\Voul\E-Commerce Site\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll

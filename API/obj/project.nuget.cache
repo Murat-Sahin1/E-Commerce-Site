@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "97zQYJkElxU5u4undhO94B3sDnHd/vyloMYK8+Tj3QTgzo2OOHKv1sBMxYhL8d+zr3S0Jb4YicDRpJEqkkC7Wg==",
+  "dgSpecHash": "aOmHXlZNw5VoCchWEYCWfZeL1gEcPyK/q6ru2GQgwFZPyM8vulMuVskOc8K7j+DuJNzsEV2XdvZ66YXXdNDKQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Voul\\E-Commerce Site\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.7\\microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512",
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.7\\microsoft.entityframeworkcore.design.6.0.7.nupkg.sha512",
+    "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.7\\microsoft.entityframeworkcore.inmemory.6.0.7.nupkg.sha512",
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.7\\microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.7\\microsoft.entityframeworkcore.sqlite.6.0.7.nupkg.sha512",
     "C:\\Users\\Voul\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.7\\microsoft.entityframeworkcore.sqlite.core.6.0.7.nupkg.sha512",

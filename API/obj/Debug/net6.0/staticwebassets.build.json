@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YGMEQD9iJusJSu/iW1LjRbla/WPIWd1rScf/b/ug+qs=",
+  "Hash": "MYLuWPX6QXd7sGWk7mdReLFMdmIlz033ciJqiBefaMY=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Voul\\E-Commerce Site\\API\\wwwroot\\images\\products\\sb-ts1.png",
+      "Identity": "C:\\Users\\Voul\\E-Commerce Site\\API\\wwwroot\\images\\products\\camera.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Voul\\E-Commerce Site\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "images/products/sb-ts1.png",
+      "RelativePath": "images/products/camera.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
+      "OriginalItemSpec": "wwwroot\\images\\products\\camera.jpg"
     }
   ]
 }
