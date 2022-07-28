@@ -2178,9 +2178,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\API\\API.csproj",
+      "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\API\\API.csproj",
       "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\API\\obj\\",
       "projectStyle": "PackageReference",
@@ -2199,8 +2199,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K1H3JUVvZr5DSbhD4gosXF/NWs0ub02XeFcgAY1k+OhL3jTDCSuVoKf8WXIRjmbooI/yTrD04OaEwanUq0TQtQ==",
+  "dgSpecHash": "G7CLsdEV3UYe/hT7yx5Eg/i43Jaea1yWZ0WKi1wn+2RH9Wn1xSbLgX90r/UgGGiYqb5V1q3u539iqrKjKtpiFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.7\\microsoft.data.sqlite.core.6.0.7.nupkg.sha512",

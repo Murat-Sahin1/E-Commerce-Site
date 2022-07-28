@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj": {
+    "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -58,12 +58,12 @@
         }
       }
     },
-    "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Core\\Core.csproj"
+              "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Core\\Core.csproj"
               }
             }
           }
