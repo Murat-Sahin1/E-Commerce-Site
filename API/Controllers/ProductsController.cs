@@ -114,26 +114,15 @@ namespace API.Controllers
         [HttpPut("update/{id}")]
         public async Task<ActionResult<Product>> UpdateProductPut(int id, 
         ProductToReturnDto updatedProduct){
-            if (updatedProduct == null){
-                return new ObjectResult(new ApiResponse(400));
-            }
-
             var productToUpdate =  await _storeContext.Products.AsTracking().SingleOrDefaultAsync(p => p.Id == updatedProduct.Id);
-
-
-            if(productToUpdate == null){
-                return new ObjectResult(new ApiResponse(404));
-            }
             
             //Mapping from dto to entity
             ProductType updatedProductType = new ProductType{
-                Id = _storeContext.ProductTypes.Count() + 1,
                 Name = updatedProduct.ProductType
             };
 
             ProductBrand updatedProductBrand = new ProductBrand{
-                Id = _storeContext.ProductBrands.Count() + 1,
-                Name = updatedProduct.ProductType
+                Name = updatedProduct.ProductBrand
             };
 
             //Mapping from dto to entity
