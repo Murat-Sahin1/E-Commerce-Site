@@ -65,7 +65,7 @@
         "projectName": "Infrastructure",
         "projectPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\YUSUFSENYURT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YUSUFSENYURT\\Source\\Repos\\E-Commerce-Site\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\YUSUFSENYURT\\source\\repos\\E-Commerce-Site\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\YUSUFSENYURT\\AppData\\Roaming\\NuGet\\NuGet.Config",
