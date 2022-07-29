@@ -24,6 +24,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>(); //?
@@ -33,6 +34,18 @@ namespace API
             services.AddDbContext<StoreContext>(x => 
             x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+
+             services.AddCors(options =>
+    {
+        options.AddPolicy(
+            name: "AllowOrigin",
+            builder =>{
+                builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+            });
+    });
+
 
             services.Configure<ApiBehaviorOptions>(options => 
             {
@@ -66,13 +79,19 @@ namespace API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
             
+            
 
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
 
+
             app.UseRouting();
+            app.UseCors("AllowOrigin");
             app.UseStaticFiles();
+
+            
+        
 
             app.UseAuthorization();
 

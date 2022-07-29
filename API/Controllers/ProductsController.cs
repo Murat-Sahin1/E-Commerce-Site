@@ -9,6 +9,7 @@ using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
 using Infrastructure.Data;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -35,8 +36,9 @@ namespace API.Controllers
             _productBrandRepo = productsRepo;
             _productTypeRepo = productsRepo;
         }
-        
-        [HttpGet]
+
+
+        [HttpGet("/api/[controller]")]
         public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(){
             var spec = new ProductsWithTypesAndBrandsSpecification();
 
@@ -46,7 +48,7 @@ namespace API.Controllers
             (products));
         }
 
-        [HttpGet("{id}")] //When we hit the endpoint
+        [HttpGet("/api/[controller]/{id}")] //When we hit the endpoint
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id){ //we pass the id
 
             //First thing to do is creating a new instance of specification with the id constructor
@@ -58,17 +60,17 @@ namespace API.Controllers
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
-        [HttpGet("brands")]
+        [HttpGet("/api/[controller]/brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands(){
             return Ok(await _productBrandRepo.ListAllAsync());
         }
         
-        [HttpGet("types")]
+        [HttpGet("/api/[controller]/types")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductTypes(){
             return Ok(await _productTypeRepo.ListAllAsync());
         }
         
-        [HttpDelete("delete/{id}")] //When we hit the endpoint
+        [HttpDelete("/api/[controller]/delete/{id}")] //When we hit the endpoint
         public async Task<ActionResult<ProductToReturnDto>> DeleteProduct(int id){ //we pass the id
 
             //First thing to do is creating a new instance of specification with the id constructor
@@ -84,7 +86,7 @@ namespace API.Controllers
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
-        [HttpPost("add")]
+        [HttpPost("/api/[controller]/add")]
         public async void AddProductPost(ProductToReturnDto newProduct){ 
 
             ProductType newProductType = new ProductType{
@@ -111,7 +113,7 @@ namespace API.Controllers
             _storeContext.Products.Add(finalProduct);
             await _storeContext.SaveChangesAsync();
         }
-        [HttpPut("update/{id}")]
+        [HttpPut("/api/[controller]/update/{id}")]
         public async Task<ActionResult<Product>> UpdateProductPut(int id, 
         ProductToReturnDto updatedProduct){
             var productToUpdate =  await _storeContext.Products.AsTracking().SingleOrDefaultAsync(p => p.Id == updatedProduct.Id);
