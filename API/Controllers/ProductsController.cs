@@ -19,12 +19,13 @@ namespace API.Controllers
     public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productsRepo;
-        private readonly IGenericRepository<Product> _productBrandRepo;
-        private readonly IGenericRepository<Product> _productTypeRepo;
+        private readonly IGenericRepository<ProductBrand> _productBrandRepo;
+        private readonly IGenericRepository<ProductType> _productTypeRepo;
         private readonly IMapper _mapper;
         private readonly StoreContext _storeContext;
 
-        public ProductsController(IGenericRepository<Product> productsRepo,
+        public ProductsController(
+        IGenericRepository<Product> productsRepo,
         IGenericRepository<ProductBrand> productBrandRepo, 
         IGenericRepository<ProductType> productTypeRepo,
         IMapper mapper,
@@ -33,14 +34,14 @@ namespace API.Controllers
             _storeContext = context;
             _mapper = mapper;
             _productsRepo = productsRepo;
-            _productBrandRepo = productsRepo;
-            _productTypeRepo = productsRepo;
+            _productBrandRepo = productBrandRepo;
+            _productTypeRepo = productTypeRepo;
         }
 
 
         [HttpGet("/api/[controller]")]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(){
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort){
+            var spec = new ProductsWithTypesAndBrandsSpecification(sort);
 
             var products = await _productsRepo.ListAsync(spec);
 
@@ -79,15 +80,14 @@ namespace API.Controllers
             //Next step is getting the entity from productsRepo with the given specification
             var product =  await _productsRepo.GetEntityWithSpec(spec);
 
-            
             _storeContext.Products.Remove(product);
-            _storeContext.SaveChanges();
-
+            await _storeContext.SaveChangesAsync();
+            
             return _mapper.Map<Product, ProductToReturnDto>(product);
         }
 
         [HttpPost("/api/[controller]/add")]
-        public async void AddProductPost(ProductToReturnDto newProduct){ 
+        public async Task<ActionResult<Product>> AddProductPost(ProductToReturnDto newProduct){ 
 
             ProductType newProductType = new ProductType{
                 Id = _storeContext.ProductTypes.Count() + 1,
@@ -112,6 +112,8 @@ namespace API.Controllers
 
             _storeContext.Products.Add(finalProduct);
             await _storeContext.SaveChangesAsync();
+
+            return finalProduct;
         }
         [HttpPut("/api/[controller]/update/{id}")]
         public async Task<ActionResult<Product>> UpdateProductPut(int id, 

@@ -23,12 +23,21 @@ namespace Infrastructure.Data
                 query = query.Where(spec.Criteria);
             }
 
+            if(spec.OrderBy != null){ 
+                query = query.OrderBy(spec.OrderBy);
+            }
+
+            
+            if(spec.OrderByDescending != null){ 
+                query = query.OrderByDescending(spec.OrderByDescending);
+            }
+
             //.Include(p => p.ProductBrand).Include(p => p.ProductType)
             // After that, this method aggregate the include expressions we gave.
             //And it will take the list of includes from the given specification's Includes list, which is defined at BaseSpecification.
             query = spec.Includes.Aggregate(query, (current, include) => current.Include(include));
 
             return query;
-        } 
+        }
     }
 }

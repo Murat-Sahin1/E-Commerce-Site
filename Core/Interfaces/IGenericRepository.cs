@@ -17,10 +17,6 @@ namespace Core.Interfaces
 
         Task<IReadOnlyList<T>> ListAsync (ISpecification<T> spec);
 
-        void Delete(T entity);
-
-        void Change(T dbEntity, T entity);
-
-        void Add(T entity);
+        public T Delete(T entity);
     }
 }

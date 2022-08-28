@@ -9,10 +9,21 @@ namespace Core.Specifications
 {
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesAndBrandsSpecification()
+        public ProductsWithTypesAndBrandsSpecification(string sort)
         {
             AddInclude(x => x.ProductType);
             AddInclude(x => x.ProductBrand);
+            AddOrderBy(x => x.Name);
+
+            if(!string.IsNullOrEmpty(sort)){
+                switch(sort){
+                case("priceAsc"): AddOrderBy(x => x.Price); break;
+                case("priceDesc"): AddOrderByDescending(x => x.Price); break;
+                default: AddOrderBy(n => n.Name); break;
+                }
+            }
+
+            
         }
 
         //because we got an ID, it's going to hit this constructor
