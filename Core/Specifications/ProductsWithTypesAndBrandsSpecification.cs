@@ -22,8 +22,6 @@ namespace Core.Specifications
                 default: AddOrderBy(n => n.Name); break;
                 }
             }
-
-            
         }
 
         //because we got an ID, it's going to hit this constructor

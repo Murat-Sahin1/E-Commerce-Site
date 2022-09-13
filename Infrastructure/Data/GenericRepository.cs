@@ -24,7 +24,7 @@ namespace Infrastructure.Data
         }
 
        
-        public async Task<IReadOnlyList<T>> ListAllAsync()
+        public async Task<IReadOnlyList<T>> ListAllAsync() //List without a spec object
         {
             return await _context.Set<T>().ToListAsync();
         }
